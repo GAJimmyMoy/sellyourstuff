@@ -20,8 +20,8 @@
 
 ## Overview
 
-_**SellYourStuff** Is a website that allows users to post items that they don't need or want any more online in the hopes someone want it. 
-
+_**SellYourStuff** Is a website that allows users to post items that they don't need or want any more online
+to reduce their carbon footprint and reduce waste to landfills. A small donation is give help plant a tree.
 <br>
 
 ## MVP
@@ -53,7 +53,7 @@ _ **Sell your stuff**
 #### Wireframes
 > 
 
-- Ui and Wireframs
+- Ui and Wireframes
 ![wireframework](https://whimsical.com/sellyourstuff-6ELs8YTiwbVeW4PXKGJgyD)
 https://whimsical.com/sellyourstuff-6ELs8YTiwbVeW4PXKGJgyD
 
@@ -61,7 +61,6 @@ https://whimsical.com/sellyourstuff-6ELs8YTiwbVeW4PXKGJgyD
 #### Component Tree
 
 - Components
-
 ![component tree](https://lucid.app/lucidchart/deec78f8-cb54-413b-bb51-c9935722bef8/edit?viewport_loc=-11%2C5%2C1792%2C1117%2C0_0&invitationId=inv_7e116a89-90b1-4144-82e2-168a30fdee6a)
 [alt link](https://imgur.com/TDsbrzK)
 
@@ -72,11 +71,11 @@ https://whimsical.com/sellyourstuff-6ELs8YTiwbVeW4PXKGJgyD
 ``` structure
 
 src
-|__ assets/
-      |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
+|__ screens/
+      |__ landing.jsx
+      |__ main.jsx
+      |__ create.jsx
+      |__ edit.jsx
 |__ components/
       |__ Header.jsx
 |__ services/

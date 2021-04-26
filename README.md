@@ -59,7 +59,7 @@ _ **Sell your stuff**
 
 - Components
 ![component tree](https://whimsical.com/P6Uus45rAVBZiyJjp4E7B2)
-
+[component tree](https://whimsical.com/P6Uus45rAVBZiyJjp4E7B2)
 
 #### Component Architecture
 

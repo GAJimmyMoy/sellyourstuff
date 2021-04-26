@@ -36,8 +36,6 @@ _ **Sell your stuff**
 
 ### Libraries and Dependencies
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
-
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
 |      React       | _React front end with HTML/CSS.          _ |
@@ -52,7 +50,6 @@ _ **Sell your stuff**
 
 #### Wireframes
 > 
-
 - Ui and Wireframes
 ![wireframework](https://whimsical.com/sellyourstuff-6ELs8YTiwbVeW4PXKGJgyD)
 https://whimsical.com/sellyourstuff-6ELs8YTiwbVeW4PXKGJgyD
@@ -65,8 +62,6 @@ https://whimsical.com/sellyourstuff-6ELs8YTiwbVeW4PXKGJgyD
 [alt link](https://imgur.com/TDsbrzK)
 
 #### Component Architecture
-
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
 
 ``` structure
 
@@ -89,8 +84,6 @@ src
 
 #### Time Estimates
 
-> Use this section to estimate the time necessary to build out each of the components you've described above.
-
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
 | setup backend repo  |    H     |     1  hrs     |     * hrs     |    * hrs    |
@@ -104,7 +97,6 @@ src
 | Style  screens      |    H     |     7  hrs     |     * hrs     |     TBD     |
 | Media queries.      |    H     |     5  hrs     |     * hrs     |     TBD     |
 | TOTAL               |          |     36 hrs     |     * hrs     |     TBD     |
-
 
 
 <br>

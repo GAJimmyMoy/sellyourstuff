@@ -51,7 +51,6 @@ _ **Sell your stuff**
 ### Client (Front End)
 
 #### Wireframes
-
 > 
 
 - Ui and Wireframs

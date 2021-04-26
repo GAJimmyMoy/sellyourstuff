@@ -73,11 +73,16 @@ https://whimsical.com/sellyourstuff-6ELs8YTiwbVeW4PXKGJgyD
 src
 |__ screens/
       |__ landing.jsx
+      |__ register.jsx
+      |__ login.jsx
       |__ main.jsx
       |__ create.jsx
       |__ edit.jsx
+      |__ details.jsx
+      |__ categories_page.jsx
 |__ components/
-      |__ .jsx
+      |__ cards.jsx
+|__ layout/   
 |__ services/
 
 ```

@@ -103,7 +103,7 @@ src
 
 #### ERD Model
 
-[erd- link](https://imgur.com/9cHNebr)
+[erd- link](https://lucid.app/lucidchart/5e74bc95-3bfd-49df-8b5a-5ac36f6c09c6/edit?viewport_loc=-238%2C33%2C1912%2C967%2C0_0&invitationId=inv_90d5284d-146e-4a2f-80f5-695cfcddf28e)
 <br>
 
 ***

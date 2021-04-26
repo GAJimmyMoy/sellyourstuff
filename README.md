@@ -52,7 +52,7 @@ _ **Sell your stuff**
 > 
 - Ui and Wireframes
 ![wireframework](https://whimsical.com/sellyourstuff-6ELs8YTiwbVeW4PXKGJgyD)
-https://whimsical.com/sellyourstuff-6ELs8YTiwbVeW4PXKGJgyD
+[alt link](https://whimsical.com/sellyourstuff-6ELs8YTiwbVeW4PXKGJgyD)
 
 
 #### Component Tree

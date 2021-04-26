@@ -20,25 +20,18 @@
 
 ## Overview
 
-_**SellYourStuff** Is a website that allows users to sell items that they don't need any more online. 
+_**SellYourStuff** Is a website that allows users to post items that they don't need or want any more online in the hopes someone want it. 
 
 <br>
 
 ## MVP
 
-
-_The **Sell your stuff** The website allows users to add items to be view by multiple users._
-
-<br>
-
 ### Goals
-
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
-
+<br>
+_ **Sell your stuff** 
+    -The website allows users to see items posted by other users.
+    -User can post their item with a picture, description and price which are then visible to other users.
+    ._
 <br>
 
 ### Libraries and Dependencies
@@ -64,7 +57,7 @@ _The **Sell your stuff** The website allows users to add items to be view by mul
 - Ui/ux
 ![wireframework](https://lucid.app/lucidchart/02cf4d8c-6057-4f76-a34c-c6b4dea1db89/edit?viewport_loc=5%2C85%2C1792%2C1117%2C0_0&invitationId=inv_d9af7578-339a-42ed-94d9-824fcb0eac00)
 
-[temp-img](https://imgur.com/qmusPBh)
+[alt-img](https://imgur.com/qmusPBh)
 
 #### Component Tree
 

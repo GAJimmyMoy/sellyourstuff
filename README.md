@@ -58,8 +58,8 @@ _ **Sell your stuff**
 #### Component Tree
 
 - Components
-![component tree](https://lucid.app/lucidchart/deec78f8-cb54-413b-bb51-c9935722bef8/edit?viewport_loc=-11%2C5%2C1792%2C1117%2C0_0&invitationId=inv_7e116a89-90b1-4144-82e2-168a30fdee6a)
-[alt link](https://imgur.com/TDsbrzK)
+![component tree](https://whimsical.com/P6Uus45rAVBZiyJjp4E7B2)
+
 
 #### Component Architecture
 

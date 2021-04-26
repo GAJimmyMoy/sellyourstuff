@@ -71,6 +71,7 @@ _The **Sell your stuff** The website allows users to add items to be view by mul
 - Components
 
 ![component tree](https://lucid.app/lucidchart/deec78f8-cb54-413b-bb51-c9935722bef8/edit?viewport_loc=-11%2C5%2C1792%2C1117%2C0_0&invitationId=inv_7e116a89-90b1-4144-82e2-168a30fdee6a)
+[alt link](https://imgur.com/TDsbrzK)
 
 #### Component Architecture
 
@@ -112,7 +113,7 @@ src
 - ERD
 
 ![erd- link](https://lucid.app/lucidchart/5e74bc95-3bfd-49df-8b5a-5ac36f6c09c6/edit?viewport_loc=-286%2C-137%2C2194%2C1368%2C0_0&invitationId=inv_90d5284d-146e-4a2f-80f5-695cfcddf28e)
-
+[alt link](https://imgur.com/mCtuGot)
 <br>
 
 ***

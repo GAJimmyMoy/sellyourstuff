@@ -54,10 +54,10 @@ _ **Sell your stuff**
 
 > 
 
-- Ui/ux
-![wireframework](https://lucid.app/lucidchart/02cf4d8c-6057-4f76-a34c-c6b4dea1db89/edit?viewport_loc=5%2C85%2C1792%2C1117%2C0_0&invitationId=inv_d9af7578-339a-42ed-94d9-824fcb0eac00)
+- Ui and Wireframs
+![wireframework](https://whimsical.com/sellyourstuff-6ELs8YTiwbVeW4PXKGJgyD)
 
-[alt-img](https://imgur.com/qmusPBh)
+
 
 #### Component Tree
 

@@ -55,7 +55,7 @@ _ **Sell your stuff**
 
 - Ui and Wireframs
 ![wireframework](https://whimsical.com/sellyourstuff-6ELs8YTiwbVeW4PXKGJgyD)
-
+https://github.com/GAJimmyMoy/sellyourstuff/blob/main/README.md
 
 
 #### Component Tree

@@ -58,7 +58,6 @@ _ **Sell your stuff**
 #### Component Tree
 
 - Components
-![component tree]
 [component tree](https://whimsical.com/P6Uus45rAVBZiyJjp4E7B2)
 
 #### Component Architecture

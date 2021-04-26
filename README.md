@@ -21,7 +21,7 @@
 ## Overview
 
 _**SellYourStuff** Is a website that allows users to post items that they don't need or want any more online
-to reduce their carbon footprint and reduce waste to landfills. A small donation is give help plant a tree.
+to reduce their carbon footprint and reduce waste to landfills. A small donation is given help plant a tree.
 <br>
 
 ## MVP
@@ -30,7 +30,7 @@ to reduce their carbon footprint and reduce waste to landfills. A small donation
 <br>
 _ **Sell your stuff** 
     -The website allows users to see items posted by other users.
-    -User can post their item with a picture, description and price which are then visible to other users.
+    -A registered user can post their item with a picture, description and price which are then visible to other users to see.
     ._
 <br>
 
@@ -77,7 +77,7 @@ src
       |__ create.jsx
       |__ edit.jsx
 |__ components/
-      |__ Header.jsx
+      |__ .jsx
 |__ services/
 
 ```
@@ -88,10 +88,17 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Backend with api    |    H     |     13 hrs     |     * hrs     |    * hrs    |
-| Create CRUD Actions |    H     |     13 hrs     |     * hrs     |     TBD     |
-| Create UI.          |    H     |     13 hrs     |     * hrs     |     TBD     |
-| TOTAL               |          |     39 hrs     |     * hrs     |     TBD     |
+| setup backend repo  |    H     |     1  hrs     |     * hrs     |    * hrs    |
+| setup migrations    |    H     |     2  hrs     |     * hrs     |    * hrs    |
+| setup models.       |    H     |     2  hrs     |     * hrs     |    * hrs    |
+| setup controllers   |    H     |     4  hrs     |     * hrs     |    * hrs    |
+| Create frontend repo|    H     |     1  hrs     |     * hrs     |     TBD     |
+| Base layout         |    H     |     1  hrs     |     * hrs     |     TBD     |
+| Create components   |    H     |     3  hrs     |     * hrs     |     TBD     |
+| Create screens      |    H     |     10 hrs     |     * hrs     |     TBD     |
+| Style  screens      |    H     |     7  hrs     |     * hrs     |     TBD     |
+| Media queries.      |    H     |     5  hrs     |     * hrs     |     TBD     |
+| TOTAL               |          |     36 hrs     |     * hrs     |     TBD     |
 
 
 
@@ -111,7 +118,8 @@ src
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+> Allow registered users request for purchase item from seller. 
+> Allow for question and answer between seller and potential buyers.
 
 ***
 

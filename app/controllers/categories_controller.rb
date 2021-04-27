@@ -10,7 +10,7 @@ class CategoriesController < ApplicationController
 
   # GET /categories/1
   def show
-    render json: @category
+    render json: @category include: :item
   end
 
   # POST /categories
@@ -32,6 +32,15 @@ class CategoriesController < ApplicationController
       render json: @category.errors, status: :unprocessable_entity
     end
   end
+    def add_category
+        @item= Item.find(params[:item_id])
+        @category = Category.find(params[:id])
+
+        @item.categories.push(@category)
+        
+        render json: @item, include: :categories
+    end
+
 
   # DELETE /categories/1
   def destroy

@@ -1,4 +1,5 @@
 class ItemsController < ApplicationController
+  before_action :authorized_request, only: [:create, :update, :destroy]
   before_action :set_item, only: [:show, :update, :destroy]
 
   # GET /items
@@ -10,12 +11,13 @@ class ItemsController < ApplicationController
 
   # GET /items/1
   def show
-    render json: @item
+    render json: @item, include: :category
   end
 
   # POST /items
   def create
     @item = Item.new(item_params)
+    item.user = @current_user
 
     if @item.save
       render json: @item, status: :created, location: @item

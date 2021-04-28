@@ -1,5 +1,6 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+
 export default function Nav(props) {
   const { currentUser, handleLogout } = props;
   return (
@@ -17,7 +18,7 @@ export default function Nav(props) {
               <ul>
                 <li>
                 <p>{currentUser.username}</p>
-                <Link to='/register'>items</Link>
+               
               </li>
               <li>
               <button onClick={handleLogout}> LogOut</button>
@@ -25,6 +26,9 @@ export default function Nav(props) {
             </ul>
             </> :
               <ul>
+                 <li>
+                 <Link to='/items'>items</Link>
+              </li>
               <li>
                 <Link to='/register'>Register</Link>
               </li>
@@ -36,8 +40,8 @@ export default function Nav(props) {
           <hr/>
           {
             currentUser && <>
-              <Link>items</Link>
-              <Link>categories</Link>
+              <Link to='/items'>items</Link>
+              <Link to='/items/new'>create</Link>
               </>
           }
         

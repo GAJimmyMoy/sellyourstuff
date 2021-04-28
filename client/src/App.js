@@ -3,8 +3,13 @@ import './App.css';
 import Layout from './layouts/Layout';
 import { useState, useEffect } from 'react';
 import Login from './screens/Login';
+import Items from './screens/Items';
+import ItemDetails from './screens/ItemDetails'
+import MainContainer from './containers/MainContainer'
 import Register from './screens/Register';
+import CreateItem from './screens/CreateItem'
 import { loginUser, registerUser , verifyUser, removeToken} from './services/auth';
+import Edititem from './screens/Edititem';
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
   const history = useHistory();
@@ -28,6 +33,8 @@ function App() {
     history.push('/')
   }
 
+
+  
   const handleLogout = () => {
     setCurrentUser(null)
     localStorage.removeItem('authToken');
@@ -46,20 +53,24 @@ function App() {
             <Login handleLogin={handleLogin }/>
           </Route>
           <Route path='/items/:id/edit'>
-          <h3>update</h3>
+            
+            <Edititem/>
           </Route>
           <Route path='/items/new'>
-          <h3>create</h3>
+          <CreateItem/>
           </Route>
           <Route path='/items/:id'>
-            <h3>get one</h3>
+            <h3>items id</h3>
+            <ItemDetails/>
           </Route>
           <Route path='/items'>
-          <h3>get all</h3>
+          <MainContainer/>
           </Route>
           <Route exact path='/'>
-          <h3>home page</h3>
+            <h3>home page</h3>
+            <MainContainer/>
           </Route>
+
           
         </Switch>
       </Layout>

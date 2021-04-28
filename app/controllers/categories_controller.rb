@@ -9,7 +9,8 @@ class CategoriesController < ApplicationController
 
   # GET /categories/1
   def show
-    render json: @category include: :item
+    render json: @category 
+    # include: :item
   end
 
   # POST /categories

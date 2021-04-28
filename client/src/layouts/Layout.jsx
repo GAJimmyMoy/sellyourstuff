@@ -1,11 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+
+import Nav from '../components/Nav'
 export default function Layout(props) {
+  const { currentUser, handleLogout } = props;
   return (
     <div>
       <header>
-        <h1>Sell Your Stuff</h1>
-        <Link>Login/Register</Link>
+        
+        <Nav currentUser={currentUser} handleLogout={handleLogout }/>
       </header>
       {props.children}
     </div>

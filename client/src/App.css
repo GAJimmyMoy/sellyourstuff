@@ -2,3 +2,19 @@
   text-align: center;
 }
 
+Nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+li{
+  display: inline;
+  padding: 5px;
+  
+  
+}
+a{
+  text-decoration: none;
+}

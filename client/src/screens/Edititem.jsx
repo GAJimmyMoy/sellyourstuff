@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
 export default function Edititem(props) {
-  const { items } = props;
+  const { items, handleEdit } = props;
   const [formData, setFormData] = useState({
     title: '',
     description: '',
@@ -10,15 +10,20 @@ export default function Edititem(props) {
     price: '',
     image:''
   })
-  const { id } = useParams;
-  const { name } = formData;
+  const { id } = useParams();
+  const { title, description, category, price, image } = formData;
   
 
   useEffect(() => {
     const prefillFormData = () => {
-      const items = items.find(item => item.id === Number(id))
+      
+      const item = items.find(itemOne => itemOne.id === Number(id))
       setFormData({
-        title: items.name
+        title: item.title,
+        description: item.description,
+        category: item.category,
+        price: item.price,
+        image: item.image
       })
     }
     if (items.length) {
@@ -36,13 +41,19 @@ export default function Edititem(props) {
   }
 
   return (
-    <div>
+
+    <form onSubmit={
+      (e) => {
+        e.preventDefault();
+        handleEdit(id, formData);
+      }
+    }>
       <h3>edit Item</h3>
       <label>Title:
        <input
           type="text"
           name='title'
-          value={name}
+          value={title}
           onChange={handleChange}
         >
         </input>
@@ -52,7 +63,7 @@ export default function Edititem(props) {
        <input
           type="text"
           name='description'
-          value={name}
+          value={description}
           onChange={handleChange}
         >
         </input>
@@ -62,7 +73,7 @@ export default function Edititem(props) {
        <input
           type="text"
           name='category'
-          value={name}
+          value={category}
           onChange={handleChange}
         >
         </input>
@@ -72,7 +83,7 @@ export default function Edititem(props) {
        <input
           type="text"
           name='price'
-          value={name}
+          value={price}
           onChange={handleChange}
         >
         </input>
@@ -82,13 +93,13 @@ export default function Edititem(props) {
        <input
           type="text"
           name='image'
-          value={name}
+          value={image}
           onChange={handleChange}
         >
         </input>
       </label>
       <br/>
       <button>Submit</button>
-    </div>
+    </form>
   )
 }

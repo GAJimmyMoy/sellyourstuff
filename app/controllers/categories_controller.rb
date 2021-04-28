@@ -4,7 +4,6 @@ class CategoriesController < ApplicationController
   # GET /categories
   def index
     @categories = Category.all
-
     render json: @categories
   end
 
@@ -32,14 +31,13 @@ class CategoriesController < ApplicationController
       render json: @category.errors, status: :unprocessable_entity
     end
   end
-    def add_category
-        @item= Item.find(params[:item_id])
-        @category = Category.find(params[:id])
 
-        @item.categories.push(@category)
-        
-        render json: @item, include: :categories
-    end
+  def add_category
+      @item= Item.find(params[:item_id])
+      @category = Category.find(params[:id])
+      @item.categories.push(@category) 
+      render json: @item, include: :categories
+  end
 
 
   # DELETE /categories/1

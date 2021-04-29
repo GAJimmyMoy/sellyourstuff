@@ -12,7 +12,7 @@ export default function Edititem(props) {
   })
   const { id } = useParams();
   const { title, description, category, price, image } = formData;
-  
+ 
 
   useEffect(() => {
     const prefillFormData = () => {
@@ -30,7 +30,7 @@ export default function Edititem(props) {
       prefillFormData();
     }
     
-  }, [items])
+  }, [id,items])
   
   const handleChange = (e) => {
     const { name, value } = e.target;

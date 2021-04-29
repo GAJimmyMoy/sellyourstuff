@@ -8,7 +8,9 @@ Nav{
   justify-content: space-between;
   text-decoration: none;
 }
-
+ul{
+  display: inline
+}
 li{
   display: inline;
   padding: 5px;

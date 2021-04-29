@@ -11,6 +11,7 @@ class ItemsController < ApplicationController
 
   # GET /items/1
   def show
+    @item = Item.find(params[:id])
     render json: @item, include: :category
   end
 

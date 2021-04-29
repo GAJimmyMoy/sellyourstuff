@@ -1,5 +1,5 @@
 class ItemsController < ApplicationController
-  before_action :authorized_request, only: [:create, :update, :destroy]
+  before_action :authorize_request, only: [:create, :update, :destroy]
   before_action :set_item, only: [:show, :update, :destroy]
 
   # GET /items
@@ -17,10 +17,10 @@ class ItemsController < ApplicationController
   # POST /items
   def create
     @item = Item.new(item_params)
-    item.user = @current_user
+    @item.user = @current_user
 
     if @item.save
-      render json: @item, status: :created, location: @item
+      render json: @item, status: :created
     else
       render json: @item.errors, status: :unprocessable_entity
     end
@@ -48,6 +48,7 @@ class ItemsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def item_params
-      params.require(:item).permit(:title, :description, :price, :user_id, :category_id)
+      params.require(:item).permit(:title, :description, :price, :img_url, :user_id, :category_id)
+      # :category_id
     end
 end

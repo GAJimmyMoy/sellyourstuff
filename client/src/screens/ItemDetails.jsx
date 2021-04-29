@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 export default function ItemDetails(props) {
   const { id } = useParams();
-  const { items } = props;
+  const { items,handleDelete } = props;
   const [item, setItem] = useState(null);
   // console.log(id);
   // console.log(items);
@@ -25,10 +25,15 @@ export default function ItemDetails(props) {
           </div>
           <div className="details_container_b">
             <h3>id:{ item.id}</h3>
-          <h3>{item.title}</h3>
+            <h3>{item.title}</h3>
+            <h3>category id:{item.category_id} </h3>
+           
           <p>{item.description}</p>
-          <p>${item.price}</p>
-            <button onClick={() => { }}>Delete</button>
+            <p>${item.price}</p>
+            
+            <button onClick={() => handleDelete(item.id)}>delete</button>
+            <Link to={`/items/${item.id}/edit`}><button>Update</button></Link>
+            
             </div>
         </div>
       )}

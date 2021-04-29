@@ -3,7 +3,7 @@ import { Switch, Route, useHistory } from "react-router-dom";
 import Category from "../screens/Category";
 import { useState, useEffect } from "react";
 import { getAllCategories } from "../services/category";
-import { getAllItems, putItem,postItem } from "../services/items";
+import { getAllItems, putItem,postItem,deleteItem } from "../services/items";
 import Items from "../screens/Items";
 import ItemDetails from "../screens/ItemDetails";
 import CreateItem from "../screens/CreateItem";
@@ -41,6 +41,11 @@ export default function MainContainer() {
     }))
     history.push('/items')
   }
+  const handleDelete = async (id) => {
+    await deleteItem(id);
+    setItems(prevState => prevState.filter(item => item.id !== id))
+    history.push('/items')
+  }
 
   return (
     <div>
@@ -50,14 +55,14 @@ export default function MainContainer() {
         </Route>
 
         <Route path="/items/:id/edit">
-          <Edititem items={items} handleEdit={handleEdit}/>
+          <Edititem items={items} handleEdit={handleEdit} category={category }/>
         </Route>
         <Route path="/items/new">
           <CreateItem handleCreate={handleCreate} category={category }/>
         </Route>
         <Route path="/items/:id">
           
-          <ItemDetails items={items} />
+          <ItemDetails items={items} handleDelete={handleDelete}/>
         </Route>
         <Route path="/items">
           <Items items={items} />

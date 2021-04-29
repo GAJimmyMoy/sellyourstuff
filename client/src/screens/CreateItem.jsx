@@ -49,15 +49,7 @@ export default function CreateItem(props) {
         ></input>
       </label>
       <br />
-      {/* <label>Category:
-       <input
-          type="text"
-          name='category_id'
-          value={category}
-          onChange={handleChange}
-        >
-        </input>
-      </label> */}
+    
 
       <label for="categories">
         Category:

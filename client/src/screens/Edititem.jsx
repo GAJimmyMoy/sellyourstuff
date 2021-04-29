@@ -6,13 +6,13 @@ export default function Edititem(props) {
   const [formData, setFormData] = useState({
     title: '',
     description: '',
-    category: '',
+    category_id: '',
     price: '',
-    image:''
+    img_url:''
   })
   const { id } = useParams();
-  const { title, description, category, price, image } = formData;
- 
+  const { title, description, category_id, price, image } = formData;
+  const { category} = props;
 
   useEffect(() => {
     const prefillFormData = () => {
@@ -69,7 +69,7 @@ export default function Edititem(props) {
         </input>
       </label>
       <br/>
-      <label>Category:
+      {/* <label>Category:
        <input
           type="text"
           name='category'
@@ -77,6 +77,19 @@ export default function Edititem(props) {
           onChange={handleChange}
         >
         </input>
+      </label> */}
+      <label for="categories">
+        Category:
+        <select onChange={handleChange} name="category_id" id="categories" defaultValue='default'>
+          <option disabled value='default'>--Select a flavor--</option>
+          {
+            category.map((cat) => (
+              <option value={cat.id}>{ cat.name}</option>
+
+            ))
+          }
+         
+        </select>
       </label>
       <br/>
       <label>price:
@@ -92,7 +105,7 @@ export default function Edititem(props) {
       <label>image_url:
        <input
           type="text"
-          name='image'
+          name='img_url'
           value={image}
           onChange={handleChange}
         >

@@ -56,8 +56,8 @@ export default function MainContainer() {
           <CreateItem handleCreate={ handleCreate}/>
         </Route>
         <Route path="/items/:id">
-          <h3>items id</h3>
-          <ItemDetails />
+          
+          <ItemDetails items={items} />
         </Route>
         <Route path="/items">
           <Items items={items} />

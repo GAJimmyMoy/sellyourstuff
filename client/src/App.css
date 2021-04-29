@@ -33,3 +33,27 @@ a{
   flex-wrap: wrap;
   padding: 30px;
 }
+.item_img{
+  height: 180px;
+ 
+}
+button{
+  border: none;
+  background-color: none;
+}
+.item_details_img{
+  height: 400px;
+}
+.details_container{
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.details_container_a{
+  border: 1px solid black;
+}
+.details_container_b{
+  padding-top: 100px;
+  border: 1px solid black;
+}

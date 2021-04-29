@@ -53,7 +53,7 @@ export default function MainContainer() {
           <Edititem items={items} handleEdit={handleEdit}/>
         </Route>
         <Route path="/items/new">
-          <CreateItem handleCreate={ handleCreate}/>
+          <CreateItem handleCreate={handleCreate} category={category }/>
         </Route>
         <Route path="/items/:id">
           

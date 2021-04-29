@@ -10,8 +10,8 @@ export default function CreateItem(props) {
     category_id: "",
   });
 
-  const { title, description, category, price, image } = formData;
-  const { handleCreate } = props;
+  const { title, description, category_id, price, image } = formData;
+  const { handleCreate , category} = props;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -62,13 +62,14 @@ export default function CreateItem(props) {
       <label for="categories">
         Category:
         <select onChange={handleChange} name="category_id" id="categories" defaultValue='default'>
-        <option disabled value='default'>--Select a flavor--</option>
-          <option value="19">Electronics</option>
-          <option value="20">Clothing</option>
-          <option value="21">Appliances</option>
-          <option value="22">Antique</option>
-          <option value="23">Furniture</option>
-          <option value="24">Media</option>
+          <option disabled value='default'>--Select a flavor--</option>
+          {
+            category.map((cat) => (
+              <option value={cat.id}>{ cat.name}</option>
+
+            ))
+          }
+         
         </select>
       </label>
 

@@ -47,7 +47,7 @@ function App() {
   return (
     <div className="App">
       <Layout currentUser={currentUser} handleLogout={handleLogout}>
-        <hr />
+        
         <Switch>
           <Route path="/register">
             <Register handleRegister={handleRegister} />

@@ -41,78 +41,82 @@ export default function Edititem(props) {
   }
 
   return (
-
+<div className="container">
     <form onSubmit={
       (e) => {
         e.preventDefault();
         handleEdit(id, formData);
       }
     }>
-      <h3>edit Item</h3>
+        <h3>Edit Item</h3>
+        <div className="form-group">
       <label>Title:
        <input
+              className="form-control"
           type="text"
           name='title'
           value={title}
           onChange={handleChange}
         >
         </input>
-      </label>
-      <br/>
+          </label>
+          </div>
+          <div className="form-group">
       <label>description:
        <input
+              className="form-control"
           type="text"
           name='description'
           value={description}
           onChange={handleChange}
         >
         </input>
-      </label>
-      <br/>
-      {/* <label>Category:
-       <input
-          type="text"
-          name='category'
-          value={category}
-          onChange={handleChange}
-        >
-        </input>
-      </label> */}
-      <label for="categories">
+          </label>
+          </div>
+      
+          <div className="form-group">
+      <label htmlFor="categories">
         Category:
-        <select onChange={handleChange} name="category_id" id="categories" defaultValue='default'>
+        <select className="form-control" onChange={handleChange} name="category_id" id="categories" defaultValue='default'>
           <option disabled value='default'>--Select a flavor--</option>
           {
             category.map((cat) => (
-              <option value={cat.id}>{ cat.name}</option>
+              <option key={cat.id } value={cat.id}>{ cat.name}</option>
 
             ))
           }
          
         </select>
-      </label>
-      <br/>
+          </label>
+          </div>
+      
+          <div className="form-group">
       <label>price:
        <input
+              className="form-control"
           type="text"
           name='price'
           value={price}
           onChange={handleChange}
         >
         </input>
-      </label>
-      <br/>
+          </label>
+          </div>
+          <div className="form-group">
       <label>image_url:
        <input
+              className="form-control"
           type="text"
           name='img_url'
           value={image}
           onChange={handleChange}
         >
         </input>
-      </label>
-      <br/>
-      <button>Submit</button>
-    </form>
+          </label>
+          </div>
+      
+      <button className="btn">Submit</button>
+      </form>
+      </div>
   )
 }

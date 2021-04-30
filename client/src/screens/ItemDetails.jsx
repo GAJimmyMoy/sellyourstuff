@@ -20,19 +20,19 @@ export default function ItemDetails(props) {
       {item && (
         <div className="details_container">
           <div className="details_container_a">
-          <img className="item_details_img" src={item.img_url} />
+          <img className="item_details_img" src={item.img_url} alt="" />
           
           </div>
           <div className="details_container_b">
-            <h3>id:{ item.id}</h3>
+            <h3>Product id:{ item.id}</h3>
             <h3>{item.title}</h3>
             <h3>category id:{item.category_id} </h3>
-           
+            <h3>user id:{item.user_id} </h3>
           <p>{item.description}</p>
             <p>${item.price}</p>
             
-            <button onClick={() => handleDelete(item.id)}>delete</button>
-            <Link to={`/items/${item.id}/edit`}><button>Update</button></Link>
+            <button className="btn" onClick={() => handleDelete(item.id)}>delete</button>
+            <Link to={`/items/${item.id}/edit`}><button className="btn">Update</button></Link>
             
             </div>
         </div>

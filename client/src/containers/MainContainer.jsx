@@ -46,7 +46,7 @@ export default function MainContainer() {
     setItems(prevState => prevState.filter(item => item.id !== id))
     history.push('/items')
   }
-
+console.log(category)
   return (
     <div>
       <Switch>

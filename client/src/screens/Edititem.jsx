@@ -12,7 +12,7 @@ export default function Edititem(props) {
   })
   const { id } = useParams();
   const { title, description, category_id, price, image } = formData;
-  const { category} = props;
+  const { category, currentUser} = props;
 
   useEffect(() => {
     const prefillFormData = () => {
@@ -78,7 +78,7 @@ export default function Edititem(props) {
       <label htmlFor="categories">
         Category:
         <select className="form-control" onChange={handleChange} name="category_id" id="categories" defaultValue='default'>
-          <option disabled value='default'>--Select a flavor--</option>
+          <option disabled value='default'>--Select a category--</option>
           {
             category.map((cat) => (
               <option key={cat.id } value={cat.id}>{ cat.name}</option>

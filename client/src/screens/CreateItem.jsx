@@ -60,7 +60,7 @@ export default function CreateItem(props) {
        <label htmlFor="categories_id">
         Category:
         <select onChange={handleChange} name="category_id" id="categories_id" className="form-control" defaultValue='default'>
-          <option disabled value='default'>--Select a flavor--</option>
+          <option disabled value='default'>--Select a category--</option>
           {
             category.map((cat) => (
               <option key={ cat.id} value={cat.id}>{ cat.name}</option>

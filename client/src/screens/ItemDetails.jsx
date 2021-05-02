@@ -5,8 +5,8 @@ export default function ItemDetails(props) {
   const { id } = useParams();
   const { items,handleDelete } = props;
   const [item, setItem] = useState(null);
-  // console.log(id);
-  // console.log(items);
+  const { currentUser } = props;
+ 
 
   useEffect(() => {
     if (items.length) {
@@ -14,7 +14,7 @@ export default function ItemDetails(props) {
       setItem(oneItem);
     }
   }, [items, id]);
-  // console.log(item);
+  
   return (
     <div>
       {item && (
@@ -30,9 +30,14 @@ export default function ItemDetails(props) {
             <h3>user id:{item.user_id} </h3>
           <p>{item.description}</p>
             <p>${item.price}</p>
+            {currentUser ?
+              (<>
+                <button className="btn" onClick={() => handleDelete(item.id)}>delete</button>
+              <Link to={`/items/${item.id}/edit`}><button className="btn">Update</button></Link>
+            </>
+              ):(<></>)
+            }
             
-            <button className="btn" onClick={() => handleDelete(item.id)}>delete</button>
-            <Link to={`/items/${item.id}/edit`}><button className="btn">Update</button></Link>
             
             </div>
         </div>

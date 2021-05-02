@@ -1,17 +1,18 @@
 import React from 'react'
 
 export default function Category(props) {
-  const { category } = props;
+  const { category, currentUser } = props;
   console.log(category)
   return (
     <div>
-      <h3>category</h3>
+      <h3>Categories </h3>
       {
-        category.map(categ => (
+         currentUser && category.map(categ => (
           
           <p key={categ.id}>{categ.name}</p>
           
-        ))}
+        ))
+      }
     </div>
   )
 }

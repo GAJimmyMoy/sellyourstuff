@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import logo from './logo.png';
 export default function Nav(props) {
   const { currentUser, handleLogout } = props;
   return (
@@ -8,7 +8,7 @@ export default function Nav(props) {
       <nav>
         <div className="logo">
           <Link to="/">
-            <h1>Sell Your Stuff</h1>
+            <img src={logo} className="logo" alt="logo.png" />
           </Link>
         </div>
 
@@ -28,7 +28,7 @@ export default function Nav(props) {
                     <Link to="/items">items</Link>
                     
                     <Link to="/items/new">create</Link>
-                    
+                    <Link to="/category">categories</Link>
             </>
                 </li>
               </ul>

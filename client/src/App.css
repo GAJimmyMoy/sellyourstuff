@@ -2,15 +2,14 @@
   text-align: center;
  
 }
-.logo{
-  height: 100px;
-}
+
 .homepage{
   width: 90%;
   margin: auto;
 }
 .logo{
   padding-left: 10px;
+  height: 100px;
 }
 nav{
   display: flex;
@@ -172,4 +171,44 @@ color: #222;
   font-size: 16px;
   text-transform: uppercase;
   color: white;
+}
+
+@media only screen and (max-width: 600px) {
+ 
+  .container{
+    width: 250px;
+  }
+  .container form{
+    padding: 15px;
+  }
+
+  nav ul li a{
+    font-size: 12px;
+    padding: 0px 15px;
+  }
+  .username_p{
+    font-size: 12px;
+  }
+  .logo{
+   height: 70px;
+  }
+  ul{
+    padding: 0px;
+    
+  }
+  .nav-links{
+    padding: 0px;
+    margin: 0px;
+  }
+  .main_container{
+    margin: auto;
+  }
+  .card_container{
+    margin: auto;
+   
+  }
+  .item_details_img{
+    height: 200px;
+  }
+ 
 }

@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Items(props) {
-  const { items } = props;
-  console.log(items)
+  const { items} = props;
+  
  
   return (
     <div className="homepage">

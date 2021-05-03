@@ -50,7 +50,7 @@ export default function MainContainer(props) {
   console.log(category)
   console.log(currentUser)
   return (
-    <div>
+    <div className="main_container">
       <Switch>
         <Route path="/category">
           <Category category={category} currentUser={currentUser}/>

@@ -5,7 +5,7 @@ export const getAllCategories = async () => {
   return resp.data;
 }
 
-export const addCategory = async (itemId, categoryId ) => {
-  const resp = await api.get(`/items/${itemId}/categories/${categoryId}`)
+export const addCategory = async (categoryName ) => {
+  const resp = await api.post(`/categories/`, { category: categoryName })
   return resp.data;
 }
